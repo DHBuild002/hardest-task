@@ -1,11 +1,15 @@
 /* CSS files add styling rules to your content */
-
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+body{
+	font-family: Roboto, sans-serif;
 }
-
-h1 {
-  font-style: italic;
-  color: #373fff;
+h2{
+	color: rgb(255, 255, 255);
+	background: rgb(124, 192, 229);
+	padding: 50px;
+}
+button {
+	border-style: none;
+	border: 1px solid black;
+	margin: 0;
+	cursor: pointer;
 }
