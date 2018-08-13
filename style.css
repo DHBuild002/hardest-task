@@ -48,7 +48,6 @@ input {
 button:focus, input:focus{
     outline: 0;
     box-shadow: 0.5px 0.5px 6px grey;
-
 }
 .remove-section {
 	margin-bottom: 30px;
@@ -58,9 +57,9 @@ button:focus, input:focus{
 	border: 1px solid black;
 }
 .toggle-section button {
-	background: rgb(255, 255, 255);
-	color: rgb(91, 195, 65);
-	border: 1px solid rgb(91, 195, 65);
+    background: rgb(255, 255, 255);
+    color: rgb(48, 69, 157);
+    border: 1px solid rgb(48, 69, 157);
 }
 .toggle-section button:hover {
 	background: rgb(233, 233, 233);
@@ -71,12 +70,13 @@ div:nth-child(1){
 .last-row {
 	width: 100%;
 }
-.last-row > button {
-	background: rgb(91, 195, 65);
-	color: white;
-}
 .last-row > button:hover {
-	background: rgb(82, 175, 59);
+    background: rgb(51, 106, 200);
+}
+
+.last-row > button {
+    background: rgb(48, 69, 157);
+    color: white;
 }
 ul {
 	list-style: none;
