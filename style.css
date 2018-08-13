@@ -38,7 +38,7 @@ button p {
 }
 input {
     height: 33px;
-		width: 225px;
+		width: 245px;
     border-radius: 5px;
     border-style: none;
     border: 1px solid #cecece;
@@ -65,8 +65,8 @@ button:focus, input:focus{
 .toggle-section button:hover {
 	background: rgb(233, 233, 233);
 }
-.app-container:nth-child(1){
-  
+div:nth-child(1){
+  margin-bottom: 25px;
   }
 .last-row {
 	width: 100%;
