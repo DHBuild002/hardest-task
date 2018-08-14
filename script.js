@@ -15,7 +15,6 @@ var hTask = {
   },
   toggleCompleted: function(position) {
     var task = this.tasks[position];
-    debugger;
     task.completed = !task.completed;
   },
   toggleAll: function() {
