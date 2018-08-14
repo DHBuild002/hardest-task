@@ -46,6 +46,8 @@ input {
     border-style: none;
     border: 1px solid #cecece;
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
     text-indent: 15px;
 }
@@ -55,9 +57,6 @@ input:focus{
 button:focus, input:focus{
     outline: 0;
     box-shadow: 0.5px 0.5px 6px grey;
-}
-.remove-section {
-	margin-bottom: 30px;
 }
 .remove {
 	background-color: rgb(237, 59, 49);
