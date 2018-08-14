@@ -11,7 +11,7 @@ h2{
 }
 button {
     color: rgb(255, 255, 255);
-    background: rgb(51, 106, 200);
+    background: rgb(79, 117, 204);
     border-style: none;
     border: 0.5px solid grey;
     border-radius: 5px;
@@ -19,13 +19,15 @@ button {
     margin-bottom: 6px;
     cursor: pointer;
     width: 250px;
-    height: 36px;
+    height: 50px;
+    box-shadow: 0px 2px black;
 }
-button:hover{
-	color: rgb(0, 0, 0);
-	background-color: white;
-	border: .5px solid grey;
-	transition: ease-in 200ms;
+button:hover {
+    color: rgb(239, 239, 239);
+    background-color: rgba(64, 96, 173, 1);
+    border: .5px solid #493f82;
+    transition: ease-in 200ms;
+    box-shadow: 0px 1px black;
 }
 .remove:hover {
 	color: rgb(217, 49, 49);
@@ -37,7 +39,7 @@ button p {
 	background: rgb(48, 69, 157);
 }
 input {
-    height: 33px;
+    height: 50px;
 		width: 245px;
     border-radius: 5px;
     border-style: none;
