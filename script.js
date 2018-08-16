@@ -31,8 +31,7 @@ var hTask = {
       toggleAll: function() {
             var taskCount = this.tasks.length;
             var completedTasks = 0;
-
-            /*
+          /*
             Below block of code equal to -> this.tasks.forEach ... completedTasks++
     
             for (var i = 0; i < taskCount; i++) {
@@ -40,38 +39,45 @@ var hTask = {
                 completedTasks++;
               }
             }
-            */
             this.tasks.forEach(function(task) {
                if (task.completed === true) {
                   completedTasks++;
                }                
             });
-
-            /* 
             Below function is equal to -> this.tasks.forEach ... tasks.completed = false; 
             if (completedTasks === taskCount) {
               for (var i = 0; i < taskCount; i++) {
                 this.tasks[i].completed = false;
               }
-            */
-            
-            this.tasks.forEach(function(task) {
-               task.completed = false;
+            if(completedTasks === taskCount){
+                this.tasks.forEach(function(task) {
+                   task.completed = false;
+                });
+            } else {                           
+               this.task.forEach(function(task) {
+                   task.completed = true;
             });
-            this.task.forEach(function(task) {
-               task.completed = true;
+          
+              Finally, the last this statement will help us change back to true if it has been completed:
+              } else {
+                for (var i = 0; i < taskCount; i++) {
+                  this.tasks[i].completed = true;
+                }
+                
+                */
+        
+        this.tasks.forEach(function(task){
+              if(completedTasks === taskCount){
+                task.completed = false;
+        } else {
+                task.completed = true;
+              }
             });
-
-            /* 
-    Finally, the last this statement will help us change back to true if it has been completed:
-    } else {
-      for (var i = 0; i < taskCount; i++) {
-        this.tasks[i].completed = true;
       }
-    }
-  }
-  */
-      }
+};
+        
+          
+              
             var handlers = {
                addTask: function() {
                   var addTaskInput = document.getElementById('addTaskInput');
