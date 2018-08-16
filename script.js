@@ -103,8 +103,10 @@ var view = {
       }
 	};
 
+// Setting up an Event listener to the whole Unordered list
 var eventsInUl = document.querySelector('ul');
-
-eventsInUl.addEventListener('click', function() {});
-
-}
+eventsInUl.addEventListener('click', function(event) {
+  // Line Below: Targets the Click event inside of the UL then gives you all the dom information about that click event
+  // Using one of the properties named ParentNode, you can access the ID in the parenting LI
+  console.log(event.target.parentNode.id);
+});
