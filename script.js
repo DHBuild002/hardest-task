@@ -70,41 +70,30 @@ var handlers = {
 	}
 };
 
-// Adding the tasks into the Apps Body (HTML)
-
-// this is the object that contains all the view methods
 var view = {
-	// this is the method that displays our current tasks to the HTML page
 	displayTasks: function(){
-			// This line create the container for the list items
 			var tasksUl = document.querySelector('ul');
-			// This wipes the Whole List on page load
 			tasksUl.innerHTML = '';
 			for(var i = 0; i < hTask.tasks.length; i++){
-				// This line creates the blank Li Element for the HTML page
+				
 				var taskLi = document.createElement('li');
 				var task = hTask.tasks[i];
 				var taskIsCompleted = '';
-				// (x) taskText
-				// var taskTextCompleted = '';
-
-				//if(taskCompleted === true)
-					// (x) taskText
-					// else
-					// () taskText
-
-					// taskLi.textContent = taskTextCompleted;
 				if (hTask.tasks === 0){
 					return "Your Task list is empty!"
 				} else if (task.completed === true) {
-					// This tells the computer what to put in the list item
 					taskIsCompleted = '(x) ' + task.taskText;
 				} else {
 					taskIsCompleted = '( ) ' + task.taskText;
 				}
 				taskLi.textContent = taskIsCompleted;
-				// This line below, tells the system what to do with the list item
 				tasksUl.appendChild(taskLi);
-		}
+		},
+      addRemoveButton: function(){
+        var removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove Task';
+        removeButton.className = 'removeButton';
+        return removeButton;
+      }
 	}
 };
