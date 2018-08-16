@@ -86,14 +86,19 @@ var view = {
 				} else {
 					taskIsCompleted = '( ) ' + task.taskText;
 				}
+        // Line Below: adding the ID of each task in before appending the remove task buttons
+        taskLi.id = i;
+      
 				taskLi.textContent = taskIsCompleted;
+        // Line Below: Adds a remove task button next to each item in the list
+        taskLi.appendChild(this.addRemoveButton());
 				tasksUl.appendChild(taskLi);
-		},
+		}
+  },
       addRemoveButton: function(){
         var removeButton = document.createElement('button');
         removeButton.textContent = 'Remove Task';
         removeButton.className = 'removeButton';
         return removeButton;
       }
-	}
-};
+	};
