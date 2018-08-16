@@ -53,10 +53,17 @@ var handlers = {
 		renameTaskText.value = '';
 		view.displayTasks();
 	},
+  /*
+  v8 - Remove by position ID Input 
 	removeTask: function() {
-		var removeTaskPosition = document.getElementById('removeTaskPosition');
+	var removeTaskPosition = document.getElementById('removeTaskPosition');
 		hTask.removeTask(removeTaskPosition.valueAsNumber);
 		removeTaskPosition.value = '';
+		view.displayTasks();
+	},
+  */ 
+  removeTask: function(position) {
+    hTask.removeTask(position);
 		view.displayTasks();
 	},
 	toggleAll: function() {
@@ -107,6 +114,20 @@ var view = {
 var eventsInUl = document.querySelector('ul');
 eventsInUl.addEventListener('click', function(event) {
   // Line Below: Targets the Click event inside of the UL then gives you all the dom information about that click event
-  // Using one of the properties named ParentNode, you can access the ID in the parenting LI
-  console.log(event.target.parentNode.id);
+  // Using one of the properties named ParentNode, you can access the ID in the parenting LI element
+  // This enables us to both detect a click in the general UL, and target the specific item in the list
+  // console.log(event.target.parentNode.id);
+  
+  
+  
+  // Get the element that was clicked one
+  var elementClicked = event.target;
+  // check the element clicked was the delete button
+  if ( elementClicked.className === 'deleteButton'){
+      handlers.removeTask();
+      // Getting the position of the task we wish to remove.
+      parseInt(elementClicked.parentNode.id);
+  
+  }
+  
 });
