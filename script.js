@@ -16,35 +16,46 @@ var hTask = {
   toggleCompleted: function(position) {
     var task = this.tasks[position];
     task.completed = !task.completed;
-  },
-  
-/*
-  
+  }, 
   toggleAll: function() {
     var taskCount = this.tasks.length;
     var completedTasks = 0;
+    /*
+    Below block of code equal to -> this.tasks.forEach ... completedTasks++
     
-    this.tasks.forEach(function(){
-      
-    });
-  
     for (var i = 0; i < taskCount; i++) {
       if (this.tasks[i].completed === true) {
         completedTasks++;
       }
     }
+    */
+    this.tasks.forEach(function(task){
+      if(task.completed === true){
+        completedTasks++;
+      }
+    });
+    /* Below function is equal to -> this.tasks.forEach ... tasks.completed = false; 
     if (completedTasks === taskCount) {
       for (var i = 0; i < taskCount; i++) {
         this.tasks[i].completed = false;
       }
+    */
+    
+    this.tasks.forEach(function(task){
+        task.completed = false;
+    })
+    this.task.forEach(function(task){
+        task.completed = true;
+    })
+    /*
+  
     } else {
       for (var i = 0; i < taskCount; i++) {
         this.tasks[i].completed = true;
       }
     }
   }
-  
-*/
+  */
 
 var handlers = {
 	addTask: function(){
