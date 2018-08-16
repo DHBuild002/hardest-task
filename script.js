@@ -44,7 +44,7 @@ var hTask = {
             this.tasks.forEach(function(task) {
                if (task.completed === true) {
                   completedTasks++;
-               }
+               }                
             });
 
             /* 
@@ -54,13 +54,13 @@ var hTask = {
                 this.tasks[i].completed = false;
               }
             */
-
+            
             this.tasks.forEach(function(task) {
                task.completed = false;
-            })
+            });
             this.task.forEach(function(task) {
                task.completed = true;
-            })
+            });
 
             /* 
     Finally, the last this statement will help us change back to true if it has been completed:
@@ -71,7 +71,7 @@ var hTask = {
     }
   }
   */
-
+      }
             var handlers = {
                addTask: function() {
                   var addTaskInput = document.getElementById('addTaskInput');
