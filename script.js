@@ -28,7 +28,7 @@ var hTask = {
          var task = this.tasks[position];
          task.completed = !task.completed;
       },
-      toggleAll: function() {
+      toggleAll: function(){
             var taskCount = this.tasks.length;
             var completedTasks = 0;
         
@@ -37,7 +37,6 @@ var hTask = {
             completedTasks++;          
           }
         });
-        
         this.tasks.forEach(function(task){
               if(completedTasks === taskCount){
                 task.completed = false;
