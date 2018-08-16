@@ -103,3 +103,8 @@ ul {
     background: lightgrey;
     width: 50%;
 }
+.removeButton {
+    width: 100px;
+    height: 50px;
+   margin: 5px;
+}
