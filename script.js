@@ -1,54 +1,69 @@
 var hTask = {
-  tasks: [
-			{taskText: "Eat", completed: false},
-			{taskText: "Dance", completed: false},
-			{taskText: "Be Merry", completed: false}
-		],
-  addTask: function(taskText) {
-    this.tasks.push({taskText: taskText, completed: false});
-  },
-  renameTask: function(position, taskText) {
-    this.tasks[position].taskText = taskText;
-  },
-  removeTask: function(position) {
-    this.tasks.splice(position, 1);
-  },
-  toggleCompleted: function(position) {
-    var task = this.tasks[position];
-    task.completed = !task.completed;
-  }, 
-  toggleAll: function() {
-    var taskCount = this.tasks.length;
-    var completedTasks = 0;
-    /*
-    Below block of code equal to -> this.tasks.forEach ... completedTasks++
+      tasks: [{
+            taskText: "Eat",
+            completed: false
+         },
+         {
+            taskText: "Dance",
+            completed: false
+         },
+         {
+            taskText: "Be Merry",
+            completed: false
+         }
+      ],
+      addTask: function(taskText) {
+         this.tasks.push({
+            taskText: taskText,
+            completed: false
+         });
+      },
+      renameTask: function(position, taskText) {
+         this.tasks[position].taskText = taskText;
+      },
+      removeTask: function(position) {
+         this.tasks.splice(position, 1);
+      },
+      toggleCompleted: function(position) {
+         var task = this.tasks[position];
+         task.completed = !task.completed;
+      },
+      toggleAll: function() {
+            var taskCount = this.tasks.length;
+            var completedTasks = 0;
+
+            /*
+            Below block of code equal to -> this.tasks.forEach ... completedTasks++
     
-    for (var i = 0; i < taskCount; i++) {
-      if (this.tasks[i].completed === true) {
-        completedTasks++;
-      }
-    }
-    */
-    this.tasks.forEach(function(task){
-      if(task.completed === true){
-        completedTasks++;
-      }
-    });
-    /* Below function is equal to -> this.tasks.forEach ... tasks.completed = false; 
-    if (completedTasks === taskCount) {
-      for (var i = 0; i < taskCount; i++) {
-        this.tasks[i].completed = false;
-      }
-    */
-    
-    this.tasks.forEach(function(task){
-        task.completed = false;
-    })
-    this.task.forEach(function(task){
-        task.completed = true;
-    })
-    /*
-  
+            for (var i = 0; i < taskCount; i++) {
+              if (this.tasks[i].completed === true) {
+                completedTasks++;
+              }
+            }
+            */
+            this.tasks.forEach(function(task) {
+               if (task.completed === true) {
+                  completedTasks++;
+               }
+            });
+
+            /* 
+            Below function is equal to -> this.tasks.forEach ... tasks.completed = false; 
+            if (completedTasks === taskCount) {
+              for (var i = 0; i < taskCount; i++) {
+                this.tasks[i].completed = false;
+              }
+            */
+
+            this.tasks.forEach(function(task) {
+               task.completed = false;
+            })
+            this.task.forEach(function(task) {
+               task.completed = true;
+            })
+
+            /* 
+    Finally, the last this statement will help us change back to true if it has been completed:
     } else {
       for (var i = 0; i < taskCount; i++) {
         this.tasks[i].completed = true;
@@ -57,77 +72,78 @@ var hTask = {
   }
   */
 
-var handlers = {
-	addTask: function(){
-		var addTaskInput = document.getElementById('addTaskInput');
-		hTask.addTask(addTaskInput.value);
-		addTaskInput.value = '';
-		view.displayTasks();
-	},
-	renameTask: function() {
-		var renameTaskText = document.getElementById('renameTaskText');
-		var renameTaskPosition = document.getElementById('renameTaskPosition');
+            var handlers = {
+               addTask: function() {
+                  var addTaskInput = document.getElementById('addTaskInput');
+                  hTask.addTask(addTaskInput.value);
+                  addTaskInput.value = '';
+                  view.displayTasks();
+               },
+               renameTask: function() {
+                  var renameTaskText = document.getElementById('renameTaskText');
+                  var renameTaskPosition = document.getElementById('renameTaskPosition');
 
-		hTask.renameTask(renameTaskPosition.valueAsNumber, renameTaskText.value);
-		renameTaskPosition.value = '';
-		renameTaskText.value = '';
-		view.displayTasks();
-	},
-  removeTask: function(position) {
-    hTask.removeTask(position);
-		view.displayTasks();
-	},
-	toggleAll: function() {
-  	hTask.toggleAll();
-	},
-	toggleCompleted: function() {
-		var toggleCompletedPosition = document.getElementById('toggleCompletedPosition');
-		hTask.toggleCompleted(toggleCompletedPosition.valueAsNumber);
-		toggleCompletedPosition.value = '';
-		view.displayTasks();
-	}
-};
+                  hTask.renameTask(renameTaskPosition.valueAsNumber, renameTaskText.value);
+                  renameTaskPosition.value = '';
+                  renameTaskText.value = '';
+                  view.displayTasks();
+               },
+               removeTask: function(position) {
+                  hTask.removeTask(position);
+                  view.displayTasks();
+               },
+               toggleAll: function() {
+                  hTask.toggleAll();
+               },
+               toggleCompleted: function() {
+                  var toggleCompletedPosition = document.getElementById('toggleCompletedPosition');
+                  hTask.toggleCompleted(toggleCompletedPosition.valueAsNumber);
+                  toggleCompletedPosition.value = '';
+                  view.displayTasks();
+               }
+            };
 
-var view = {
-	displayTasks: function(){
-			var tasksUl = document.querySelector('ul');
-			tasksUl.innerHTML = '';
-			for(var i = 0; i < hTask.tasks.length; i++){
-				
-				var taskLi = document.createElement('li');
-				var task = hTask.tasks[i];
-				var taskIsCompleted = '';
-				if (hTask.tasks === 0){
-					return "Your Task list is empty!"
-				} else if (task.completed === true) {
-					taskIsCompleted = '(x) ' + task.taskText;
-				} else {
-					taskIsCompleted = '( ) ' + task.taskText;
-				}
-        taskLi.id = i;
-      
-				taskLi.textContent = taskIsCompleted;
-        taskLi.appendChild(this.addRemoveButton());
-				tasksUl.appendChild(taskLi);
-		}
-  },
-    addRemoveButton: function(){
-        var removeButton = document.createElement('button');
-        removeButton.textContent = 'Remove Task';
-        removeButton.className = 'removeButton';
-        return removeButton;
-      },
-    createEventListeners: function(){
-      var ulEvents = document.querySelector('ul');
+            var view = {
+               displayTasks: function() {
+                  var tasksUl = document.querySelector('ul');
+                  tasksUl.innerHTML = '';
+                  for (var i = 0; i < hTask.tasks.length; i++) {
 
-        ulEvents.addEventListener('click', function(event) {
-        // console.log(event.target.parentNode.id);
+                     var taskLi = document.createElement('li');
+                     var task = hTask.tasks[i];
+                     var taskIsCompleted = '';
+                     if (hTask.tasks === 0) {
+                        return "Your Task list is empty!"
+                     } else if (task.completed === true) {
+                        taskIsCompleted = '(x) ' + task.taskText;
+                     } else {
+                        taskIsCompleted = '( ) ' + task.taskText;
+                     }
+                     taskLi.id = i;
 
-        var elementClicked = event.target;
-        if (elementClicked.className === 'removeButton'){
-            handlers.removeTask(parseInt(elementClicked.parentNode.id));
-        }
-      });
-    }
-	};
-view.createEventListeners();
+                     taskLi.textContent = taskIsCompleted;
+                     taskLi.appendChild(this.addRemoveButton());
+                     tasksUl.appendChild(taskLi);
+                  }
+               },
+               addRemoveButton: function() {
+                  var removeButton = document.createElement('button');
+                  removeButton.textContent = 'Remove Task';
+                  removeButton.className = 'removeButton';
+                  return removeButton;
+               },
+               createEventListeners: function() {
+                  var ulEvents = document.querySelector('ul');
+
+                  ulEvents.addEventListener('click', function(event) {
+                     // console.log(event.target.parentNode.id);
+
+                     var elementClicked = event.target;
+                     if (elementClicked.className === 'removeButton') {
+                        handlers.removeTask(parseInt(elementClicked.parentNode.id));
+                     }
+                  });
+               }
+            };
+
+            view.createEventListeners();
