@@ -48,7 +48,6 @@ input[type="number"]{
 }
 input {
     height: 45px;
-		width: 245px;
     border-radius: 5px;
     border-style: none;
     border: 1px solid #cecece;
