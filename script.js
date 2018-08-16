@@ -102,3 +102,9 @@ var view = {
         return removeButton;
       }
 	};
+
+var eventsInUl = document.querySelector('ul');
+
+eventsInUl.addEventListener('click', function() {});
+
+}
