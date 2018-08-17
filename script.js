@@ -38,7 +38,7 @@ var hTask = {
             completedTasks++;          
           }
         });
-        console.log(this);
+        
         this.tasks.forEach(function(task){
               console.log(this);
               if(completedTasks === taskCount){
