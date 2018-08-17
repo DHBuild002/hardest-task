@@ -87,6 +87,7 @@ var hTask = {
                      var taskLi = document.createElement('li');
                      var task = hTask.tasks[i];
                      var taskIsCompleted = '';
+                    
                      if (hTask.tasks === 0) {
                         return "Your Task list is empty!"
                      } else if (task.completed === true) {
@@ -108,9 +109,9 @@ var hTask = {
                   return removeButton;
                },
                createEventListeners: function() {
-                  var ulEvents = document.querySelector('ul');
+                  var tasksUl = document.querySelector('ul');
 
-                  ulEvents.addEventListener('click', function(event) {
+                  tasksUl.addEventListener('click', function(event) {
                      // console.log(event.target.parentNode.id);
 
                      var elementClicked = event.target;
