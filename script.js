@@ -29,7 +29,7 @@ var hTask = {
          task.completed = !task.completed;
       },
       toggleAll: function(){
-        debugger;
+        // debugger;
             var taskCount = this.tasks.length;
             var completedTasks = 0;
         
@@ -38,7 +38,9 @@ var hTask = {
             completedTasks++;          
           }
         });
+        console.log(this);
         this.tasks.forEach(function(task){
+              console.log(this);
               if(completedTasks === taskCount){
                 task.completed = false;
         } else {
@@ -46,8 +48,7 @@ var hTask = {
               }
             });
       }
-};       
-              
+};            
             var handlers = {
                addTask: function() {
                   var addTaskInput = document.getElementById('addTaskInput');
