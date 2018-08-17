@@ -120,5 +120,5 @@ var hTask = {
                   });
                }
             };
-
+            view.displayTasks();
             view.createEventListeners();
