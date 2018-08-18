@@ -1,17 +1,5 @@
 var hTask = {
-      tasks: [{
-            taskText: "Eat",
-            completed: false
-         },
-         {
-            taskText: "Dance",
-            completed: false
-         },
-         {
-            taskText: "Be Merry",
-            completed: false
-         }
-      ],
+      tasks: [   ],
       addTask: function(taskText) {
          this.tasks.push({
             taskText: taskText,
@@ -90,6 +78,7 @@ var view = {
                  // turning below into forEach
                  hTask.tasks.forEach(function(task, position){
                    var taskLi = document.createElement('li');
+                   var taskIsCompleted = '';
                                
                      if (task.completed === true) {
                         taskIsCompleted = '(x) ' + task.taskText;
@@ -101,6 +90,8 @@ var view = {
                    taskLi.textContent = taskIsCompleted;
                    taskLi.appendChild(this.addRemoveButton());
                     tasksUl.appendChild(taskLi);
+                   // Below I added in a this statement to connect this methods output to the view method
+                   // this will allow it to get addRemoveButton();
                  }, this);
                },
                  
@@ -126,7 +117,7 @@ var view = {
                addRemoveButton: function() {
                   var removeButton = document.createElement('button');
                   removeButton.textContent = 'Remove Task';
-                  removeButton.className = 'removeButton';
+                  removeButton.className = 'removeTaskButtons';
                   return removeButton;
                },
                createEventListeners: function() {
@@ -136,7 +127,7 @@ var view = {
                      // console.log(event.target.parentNode.id);
 
                      var elementClicked = event.target;
-                     if (elementClicked.className === 'removeButton') {
+                     if (elementClicked.className === 'removeTaskButtons') {
                         handlers.removeTask(parseInt(elementClicked.parentNode.id));
                      }
                   });
