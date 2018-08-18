@@ -12,6 +12,7 @@ h2 {
 #app-container div {
 	margin-left: 0;
   outline: 0;
+  margin-bottom: 25px;
 }
 button {
     color: rgb(255, 255, 255);
@@ -43,14 +44,14 @@ button:focus {
 	background: rgb(48, 69, 157);
 }
 input[type="number"]{
-  width: 48.5%;
+  width: 5%;
   text-align: center;
   box-shadow: none;
   margin-right: 0px;
   margin-left: 0px;
 }
 input[type="number"]:focus{
-  width: 48.5%;
+  width: 5%;
 }
 input {
     height: 45px;
@@ -65,11 +66,13 @@ input {
 }
 input:focus {
     font-size: 15px;
-    border: unset;
-    box-shadow: 0px 3px 12px lightgrey;
+    border: 1px solid #E64E4E;
     outline: 0;
     margin-top: 0;
     width: 48.5%;
+}
+#editTaskButton {
+  margin-bottom: 5px;
 }
 .remove {
 	background-color: #E64E4E;
@@ -82,7 +85,8 @@ input:focus {
 .toggle-section .toggleTask {
     background: transparent;
     color: #E64E4E;
-    border: 1px solid 
+    border: 1px solid #E64E4E;
+    margin-bottom: 5px;
 }
 .toggle-section .toggleTask:hover {
 	background: rgb(233, 233, 233);
