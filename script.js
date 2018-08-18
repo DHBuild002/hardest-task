@@ -89,9 +89,7 @@ var hTask = {
                      var task = hTask.tasks[i];
                      var taskIsCompleted = '';
                     
-                     if (hTask.tasks === 0) {
-                        return "Your Task list is empty!"
-                     } else if (task.completed === true) {
+                     if (task.completed === true) {
                         taskIsCompleted = '(x) ' + task.taskText;
                      } else {
                         taskIsCompleted = '( ) ' + task.taskText;
