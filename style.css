@@ -106,9 +106,12 @@ ul {
     margin-left: 25%;
     font-size: 26px;
     line-height: 55px;
-    background: lightgrey;
+    background: #f3f3f3cf;
+    border-radius: 3px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px grey;
     width: 500px;
-    height: 250px;
+    height: auto;
 }
 .removeTaskButtons {
     width: 100px;
