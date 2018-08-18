@@ -10,7 +10,7 @@ h2 {
   text-align: center;
 }
 #app-container div {
-	margin-left: 25%;
+	margin-left: 0;
   outline: 0;
 }
 button {
@@ -20,9 +20,9 @@ button {
     border: 0.5px solid grey;
     border-radius: 2px;
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
     cursor: pointer;
-    width: 200px;
+    width: 48.5%;
     height: 50px;
     box-shadow: 0px 1px grey;
 }
@@ -43,23 +43,23 @@ button:focus {
 	background: rgb(48, 69, 157);
 }
 input[type="number"]{
-  width: 50px;
+  width: 48.5%;
   text-align: center;
   box-shadow: none;
-  margin-right: 6px;
-  margin-left: 7px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 input[type="number"]:focus{
-  width: 50px;
+  width: 48.5%;
 }
 input {
     height: 45px;
-    width: 250px;
+    width: 48.5%;
     border-radius: 2px;
     border-style: none;
     border: 1px solid #cecece;
-    margin-top: 5px;
-    margin-right: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
     cursor: pointer;
     text-indent: 15px;
 }
@@ -69,7 +69,7 @@ input:focus {
     box-shadow: 0px 3px 12px lightgrey;
     outline: 0;
     margin-top: 0;
-    width: 250px;
+    width: 48.5%;
 }
 .remove {
 	background-color: #E64E4E;
@@ -88,7 +88,7 @@ input:focus {
 	background: rgb(233, 233, 233);
 }
 div:nth-child(1){
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   }
 .last-row {
 	width: 100%;
@@ -103,7 +103,7 @@ div:nth-child(1){
 }
 ul {
     list-style: none;
-    margin-left: 25%;
+    margin-left: 0;
     font-size: 26px;
     line-height: 55px;
     background: #f3f3f3cf;
@@ -116,7 +116,7 @@ ul {
 .removeTaskButtons {
     width: 100px;
     height: 50px;
-    margin: 5px;
+    margin: 0px;
     position: relative;
     margin-left: 25%;
 }
