@@ -87,6 +87,24 @@ var view = {
                displayTasks: function() {
                   var tasksUl = document.querySelector('ul');
                   tasksUl.innerHTML = '';
+                 // turning below into forEach
+                 hTask.tasks.forEach(function(task, position){
+                   var taskLi = document.createElement('li');
+                               
+                     if (task.completed === true) {
+                        taskIsCompleted = '(x) ' + task.taskText;
+                     } else {
+                        taskIsCompleted = '( ) ' + task.taskText;
+                     }
+                   
+                   taskLi.id = position;
+                   taskLi.textContent = taskIsCompleted;
+                   taskLi.appendChild(this.addRemoveButton());
+                    tasksUl.appendChild(taskLi);
+                 }, this);
+               },
+                 
+                 /*
                   for (var i = 0; i < hTask.tasks.length; i++) {
 
                      var taskLi = document.createElement('li');
@@ -104,7 +122,7 @@ var view = {
                      taskLi.appendChild(this.addRemoveButton());
                      tasksUl.appendChild(taskLi);
                   }
-               },
+               */
                addRemoveButton: function() {
                   var removeButton = document.createElement('button');
                   removeButton.textContent = 'Remove Task';
