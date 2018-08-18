@@ -39,16 +39,19 @@ var hTask = {
           }
         });
         this.tasks.forEach(function(task){
-              console.log(this);
+              
               if(completedTasks === taskCount){
                 task.completed = false;
-        } else {
+              } else {
                 task.completed = true;
               }
-            });
-      }
-};            
-            var handlers = {
+          console.log(this.tasks);
+       });
+    }
+};         
+
+var handlers = {
+  
                addTask: function() {
                   var addTaskInput = document.getElementById('addTaskInput');
                   hTask.addTask(addTaskInput.value);
@@ -79,7 +82,7 @@ var hTask = {
                }
             };
 
-            var view = {
+var view = {
                displayTasks: function() {
                   var tasksUl = document.querySelector('ul');
                   tasksUl.innerHTML = '';
