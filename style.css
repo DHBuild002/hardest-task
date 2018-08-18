@@ -18,7 +18,7 @@ button {
     background: #E64E4E;
     border-style: none;
     border: 0.5px solid grey;
-    border-radius: 5px;
+    border-radius: 2px;
     margin: 0;
     margin-bottom: 6px;
     cursor: pointer;
@@ -36,6 +36,9 @@ button:hover {
 button p {
 	font-size: 25px;
 }
+button:focus {
+    box-shadow: none;
+}
 .toggleAll {
 	background: rgb(48, 69, 157);
 }
@@ -52,7 +55,7 @@ input[type="number"]:focus{
 input {
     height: 45px;
     width: 250px;
-    border-radius: 5px;
+    border-radius: 2px;
     border-style: none;
     border: 1px solid #cecece;
     margin-top: 5px;
@@ -62,16 +65,14 @@ input {
 }
 input:focus {
     font-size: 15px;
-    border: 1px dashed #4f75cc;
+    border: unset;
+    box-shadow: 0px 3px 12px lightgrey;
     outline: 0;
     margin-top: 0;
     width: 250px;
 }
-button:focus {
-    box-shadow: none;
-}
 .remove {
-	background-color: rgb(237, 59, 49);
+	background-color: #E64E4E;
 	border: 0.5px solid grey;
 }
 .remove:hover {
@@ -79,9 +80,9 @@ button:focus {
     background-color: rgb(239, 65, 20);
 }
 .toggle-section .toggleTask {
-    background: rgb(255, 255, 255);
-    color: rgb(48, 69, 157);
-    border: 1px solid rgb(48, 69, 157);
+    background: transparent;
+    color: #E64E4E;
+    border: 1px solid 
 }
 .toggle-section .toggleTask:hover {
 	background: rgb(233, 233, 233);

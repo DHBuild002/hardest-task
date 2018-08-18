@@ -45,7 +45,6 @@ var hTask = {
               } else {
                 task.completed = true;
               }
-          console.log(this.tasks);
        });
     }
 };         
@@ -73,6 +72,8 @@ var handlers = {
                },
                toggleAll: function() {
                   hTask.toggleAll();
+                  view.displayTasks();
+
                },
                toggleCompleted: function() {
                   var toggleCompletedPosition = document.getElementById('toggleCompletedPosition');
