@@ -2,6 +2,13 @@ body {
 	font-family: Roboto, sans-serif;
   margin: 0;
 }
+/* Its so Responsive */
+@media only screen and (max-width: 600px) {
+    #app-container div  {
+        background-color: lightblue;
+    }
+} 
+
 h2 {
 	color: rgb(255, 255, 255);
 	background: #E64E4E;
