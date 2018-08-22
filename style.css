@@ -1,9 +1,9 @@
 body {
-	font-family: Roboto, sans-serif;
-  margin: 0;
+	  font-family: Roboto, sans-serif;
+    margin: 0;
 }
 /* Its so Responsive */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 100px) {
     #app-container div  {
         background-color: lightblue;
     }
