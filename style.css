@@ -5,10 +5,14 @@ body {
 /* Its so Responsive */
 @media only screen and (max-width: 100px) {
     #app-container div  {
-        background-color: lightblue;
+        width: 100%;
     }
 } 
-
+@media only screen and (max-width: 600px) {
+    #input-text {
+        width: 100%;
+    }
+}
 h2 {
 	color: rgb(255, 255, 255);
 	background: #E64E4E;
