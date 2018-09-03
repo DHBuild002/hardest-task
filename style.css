@@ -5,7 +5,7 @@ body {
 /* Responsive - Breakpoints */
 @media only screen and (max-width: 600px) {
     body input {
-        width: 50%;
+        width: 100%;
     }
 }
 h2 {
@@ -29,7 +29,7 @@ button {
     margin: 0;
     margin-bottom: 0px;
     cursor: pointer;
-    width: 100%;
+    width: 40%;
     height: 50px;
     box-shadow: 0px 1px grey;
 }
@@ -50,18 +50,18 @@ button:focus {
 	background: rgb(48, 69, 157);
 }
 input[type="number"]{
-  width: 100%;
+  width: 20%;
   text-align: center;
   box-shadow: none;
   margin-right: 0px;
   margin-left: 0px;
 }
 input[type="number"]:focus{
-  width: 100%;
+  width: 20%;
 }
 input {
     height: 45px;
-    width: 100%;
+    width: 40%;
     border-radius: 2px;
     border-style: none;
     border: 1px solid #cecece;
@@ -75,7 +75,7 @@ input:focus {
     border: 1px solid #E64E4E;
     outline: 0;
     margin-top: 0;
-    width: 100%;
+    width: 40%;
 }
 #editTaskButton {
   margin-bottom: 5px;
@@ -101,7 +101,7 @@ div:nth-child(1){
   margin-bottom: 0px;
   }
 .last-row {
-	width: 100%;
+	width: 40%;
 }
 .last-row > button:hover {
     background: rgb(51, 106, 200);
@@ -116,15 +116,18 @@ ul {
     margin-left: 0;
     font-size: 26px;
     line-height: 55px;
-    background: #f3f3f3cf;
+    background: #f2f2f2cf;
     border-radius: 3px;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px grey;
-    width: 100%;
+    border: 2px solid #f95050;
+    box-shadow: 0px 0px 10px #e5e5e5;
+    width: 70%;
     height: auto;
 }
+ul:before{
+  display: none;
+}
 .removeTaskButtons {
-    width: 100%;
+    width: 40%;
     height: 50px;
     margin: 0px;
     position: relative;
