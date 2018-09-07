@@ -30,8 +30,7 @@ button {
     margin-left: 2px;
     margin-bottom: 2px;
     cursor: pointer;
-    width: 50%;
-    height: 50px;
+    height: 45px;
     box-shadow: 0px 1px grey;
 }
 button:hover {
