@@ -27,7 +27,8 @@ button {
     border: 0.5px solid grey;
     border-radius: 2px;
     margin: 0;
-    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-bottom: 2px;
     cursor: pointer;
     width: 40%;
     height: 50px;
@@ -62,20 +63,25 @@ input[type="number"]:focus{
 input {
     height: 45px;
     width: 40%;
-    border-radius: 2px;
+    border-radius: 1px;
     border-style: none;
     border: 1px solid #cecece;
     margin-top: 0px;
+    margin-bottom: 0;
     margin-right: 0px;
     cursor: pointer;
     text-indent: 15px;
 }
 input:focus {
     font-size: 15px;
-    border: 1px solid #E64E4E;
+    border: none;
+    box-shadow: 1px 1px 2px lightgrey;
     outline: 0;
     margin-top: 0;
     width: 40%;
+}
+input:hover{
+  box-shadow: 1px 5px 10px lightgrey;
 }
 #editTaskButton {
   margin-bottom: 5px;
