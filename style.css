@@ -84,14 +84,11 @@ input {
 }
 input:focus {
     font-size: 15px;
-    border: 1px solid lightgrey;
+    border: 1px solid black;
     box-shadow: none;
     outline: 0;
     margin-top: 0;
     width: 93%;
-}
-input:hover{
-  box-shadow: none;
 }
 #editTaskButton {
   margin-bottom: 5px;
