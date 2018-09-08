@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-	<title>Hardest Task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Hardest Task</title>
 </head>
+
 <body>
 
-	<h2> Hardest Task - Priority Based Task Manager</h2>
-	<hr />
-<div id="app-container">
-<div>
-	<input id="addTaskInput" type="text" />
-	<button onclick="handlers.addTask()"> Add </button>
-</div>  
-<div>
-	<button id="editTaskButton" onclick="handlers.renameTask()"> Edit Task </button>
-	<input id="renameTaskPosition" type="number">
-	<input id="renameTaskText" type="text">
-</div>
-<div class="toggle-section">
-	<input id="toggleCompletedPosition" type="number" placeholder="">
-	<button class="toggleTask" onclick="handlers.toggleCompleted()"> Toggle Task Status </button>
-	<button onclick="handlers.toggleAll()"> Toggle All </button>
-</div>
-	<hr />
-</div>
-<ul>
+    <h2> Hardest Task - Priority Based Task Manager</h2>
+    <hr />
+    <div id="app-container">
+        <div>
+            <input id="addTaskInput" type="text" />
+            <button onclick="handlers.addTask()"> Add </button>
+        </div>
+        <div>
+            <button id="editTaskButton" onclick="handlers.renameTask()"> Edit Task </button>
+            <input id="renameTaskPosition" type="number">
+            <input id="renameTaskText" type="text">
+        </div>
+        <div class="toggle-section">
+            <input id="toggleCompletedPosition" type="number" placeholder="">
+            <button class="toggleTask" onclick="handlers.toggleCompleted()"> Toggle Task Status </button>
+            <button onclick="handlers.toggleAll()"> Toggle All </button>
+        </div>
+        <hr />
+    </div>
+    <ul>
 
-</ul>
-	<script type="text/javascript" src="script.js"></script>
+    </ul>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

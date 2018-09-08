@@ -3,10 +3,25 @@ body {
     margin: 0;
 }
 /* Responsive - Breakpoints */
+@media only screen and (min-width: 1200px) {
+  div > button, div > input {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  div > button, div > input {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 600px) {
-    body input {
-        width: 100%;
-    }
+  div > button, div > input, div > input[type:"number"] {
+    width: 93%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  div > button, div > input {
+    width: 93%;
+  }
 }
 h2 {
     color: rgb(255, 255, 255);
