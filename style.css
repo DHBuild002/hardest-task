@@ -5,12 +5,13 @@ body {
 /* Responsive - Breakpoints */
 @media only screen and (min-width: 1200px) {
   div > button, div > input {
-    width: 95%;
+    width: 93%;
   }
 }
 @media only screen and (max-width: 800px) {
   div > button, div > input {
     width: 93%;
+    margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -26,7 +27,7 @@ h2 {
     margin: 0;
 }
 #app-container div {
-    margin-left: 25px;
+    margin-left: auto;
     outline: 0;
     margin-bottom: 50px;
 }
@@ -60,8 +61,7 @@ button:focus {
 	background: rgb(48, 69, 157);
 }
 input[type="number"]{
-  width: 93%
-    ;
+  width: 93%;
   text-align: left;
   box-shadow: none;
   margin-right: 0px;
@@ -88,7 +88,7 @@ input:focus {
     box-shadow: none;
     outline: 0;
     margin-top: 0;
-    width: 90%;
+    width: 93%;
 }
 input:hover{
   box-shadow: none;
