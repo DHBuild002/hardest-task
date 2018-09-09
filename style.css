@@ -6,6 +6,7 @@ body {
 @media only screen and (min-width: 1200px) {
   div > button, div > input {
     width: 93%;
+    margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -36,12 +37,12 @@ button {
     background: #E64E4E;
     border-style: none;
     border: none;
-    border-radius: 2px;
+    border-radius: 8px;
     margin: 0;
     margin-left: 2px;
     margin-bottom: 2px;
     cursor: pointer;
-    height: 45px;
+    height: 75px;
     box-shadow: none;
 }
 button:hover {
@@ -66,25 +67,27 @@ input[type="number"]{
   box-shadow: none;
   margin-right: 0px;
   margin-left: 0px;
+  margin-bottom: 8px;
 }
 input[type="number"]:focus{
   width: 93%;
+  border: 5px solid rgb(255, 139, 109);
 }
 input {
-    height: 45px;
+    height: 75px;
     padding: 0;
-    border-radius: 1px;
+    border-radius: 8px;
     border-style: none;
     border: 1px solid lightgrey;
     margin-top: 0px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     margin-right: 0px;
     cursor: pointer;
     text-indent: 15px;
 }
 input:focus {
     font-size: 15px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 139, 109);
     box-shadow: none;
     outline: 0;
     margin-top: 0;
@@ -129,7 +132,7 @@ ul {
     margin-left: 0;
     font-size: 26px;
     line-height: 55px;
-    border-radius: 2px;
+    border-radius: 8px;
     border: none;
     box-shadow: 0px 0px 2px #e5e5e5;
     width: 70%;
