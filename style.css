@@ -4,19 +4,19 @@ body {
 }
 /* Responsive - Breakpoints */
 @media only screen and (min-width: 1200px) {
-  div > button, div > input {
-    width: 93%;
+  div > input {
+    width: 70%;
     margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 800px) {
-  div > button, div > input {
+  div > input {
     width: 93%;
     margin-bottom: 8px;
   }
 }
 @media only screen and (max-width: 600px) {
-  div > button, div > input, div > input[type="number"] {
+  div > input, div > input[type="number"] {
     width: 93%;
   }
 }
@@ -43,6 +43,7 @@ button {
     margin-bottom: 2px;
     cursor: pointer;
     height: 75px;
+    width: 25%;
     box-shadow: none;
 }
 button:hover {
@@ -57,12 +58,13 @@ button p {
 }
 button:focus {
     box-shadow: none;
+    width: 25%;
 }
 .toggleAll {
 	background: rgb(48, 69, 157);
 }
 input[type="number"]{
-  width: 93%;
+  width: 10%;
   text-align: left;
   box-shadow: none;
   margin-right: 0px;
@@ -70,7 +72,7 @@ input[type="number"]{
   margin-bottom: 8px;
 }
 input[type="number"]:focus{
-  width: 93%;
+  width: 10%;
   border: 5px solid rgb(255, 139, 109);
 }
 input {
@@ -91,7 +93,6 @@ input:focus {
     box-shadow: none;
     outline: 0;
     margin-top: 0;
-    width: 93%;
 }
 #editTaskButton {
   margin-bottom: 5px;

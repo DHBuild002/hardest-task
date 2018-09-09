@@ -18,16 +18,16 @@
     <hr />
     <div id="app-container">
         <div>
-            <input id="addTaskInput" type="text" />
+            <input id="addTaskInput" type="text"/>
             <button onclick="handlers.addTask()"> Add </button>
         </div>
         <div>
             <button id="editTaskButton" onclick="handlers.renameTask()"> Edit Task </button>
-            <input id="renameTaskPosition" type="number">
+            <input id="renameTaskPosition" type="number" placeholder="0,1,2... ">
             <input id="renameTaskText" type="text">
         </div>
         <div class="toggle-section">
-            <input id="toggleCompletedPosition" type="number" placeholder="">
+            <input id="toggleCompletedPosition" type="number" placeholder="0,1,2... ">
             <button class="toggleTask" onclick="handlers.toggleCompleted()"> Toggle Task Status </button>
             <button onclick="handlers.toggleAll()"> Toggle All </button>
         </div>
