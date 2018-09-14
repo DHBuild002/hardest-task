@@ -39,14 +39,16 @@ h2 {
 /* Divs */
 
 #app-container div {
-    margin-left: 10%;
-    margin-bottom: 5px;
+    margin: 1% 10%;
 }
 #app-container div:nth-of-type(input){
   cursor: pointer;  
 }
 div:nth-child(1){
   margin-bottom: 0px;
+}
+div:nth-child(1) > button {
+    width: 40%;
 }
 
 /* Buttons and Inputs */
@@ -72,9 +74,10 @@ input[type="number"]{
 }
 input[type="number"]:focus{
   border: 1px solid rgb(255, 139, 109);
+  background: #f6f6f6;
 }
-input[type=button] {
-  width: 100%;
+.toggle-section > button {
+    width: 41%;
 }
 input {
     height: 75px;
