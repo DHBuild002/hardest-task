@@ -37,17 +37,19 @@ h2 {
 
 
 /* Divs */
+
 #app-container div {
     margin-left: 10%;
-    outline: 0;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
-button, input, select, textarea {
-    margin: 0;
+#app-container div:child-of-type(input, button){
+  cursor: pointer;  
 }
-.clickable, label, input[type=button], input[type=submit], input[type=file], button {
-    cursor: pointer;
+div:nth-child(1){
+  margin-bottom: 0px;
 }
+
+/* Buttons and Input */
 button {
     color: rgb(255, 255, 255);
     background: #E64E4E;
@@ -132,9 +134,7 @@ input:focus {
 .toggle-section .toggleTask:hover {
 	background: rgb(233, 233, 233);
 }
-div:nth-child(1){
-  margin-bottom: 0px;
-}
+
 .last-row {
 	width: 40%;
 }
