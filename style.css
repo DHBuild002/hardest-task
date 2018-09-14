@@ -42,23 +42,19 @@ h2 {
     margin-left: 10%;
     margin-bottom: 5px;
 }
-#app-container div:child-of-type(input, button){
+#app-container div:nth-of-type(input){
   cursor: pointer;  
 }
 div:nth-child(1){
   margin-bottom: 0px;
 }
 
-/* Buttons and Input */
+/* Buttons and Inputs */
 button {
     color: rgb(255, 255, 255);
     background: #E64E4E;
-    border-style: none;
-    border: none;
-    border-radius: 8px;
-    margin: 0;
-    margin-left: 2px;
-    margin-bottom: 2px;
+    border-radius: 5px;
+    margin-left: 5px;
     cursor: pointer;
     height: 74.5px;
     width: 24.5%;
@@ -67,19 +63,12 @@ button {
 button:hover {
     color: rgb(255, 255, 255);
     background-color: #f95050;
-    border: unset;
-    transition: none;
-    box-shadow: none;
 }
 button:focus {
-    box-shadow: none;
     width: 24.5%;
 }
 button p {
-	font-size: 25px;
-}
-.toggleAll {
-	background: rgb(48, 69, 157);
+	  font-size: 25px;
 }
 input[type="number"]{
   width: 10%;
@@ -87,7 +76,7 @@ input[type="number"]{
   box-shadow: none;
   margin-right: 0px;
   margin-left: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 input[type="number"]:focus{
   border: 1px solid rgb(255, 139, 109);
