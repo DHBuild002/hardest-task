@@ -12,9 +12,6 @@ var hTask = {
       removeTask: function(position) {
          this.tasks.splice(position, 1);
       },
-      beforeToggle: function(){
-        document.querySelector('ul').style.display = 'none';
-      },
       toggleCompleted: function(position) {
          var task = this.tasks[position];
          task.completed = !task.completed;
@@ -41,9 +38,6 @@ var hTask = {
 };         
 
 var handlers = {
-                hideTasks: function(){
-                  var dip
-                },
                addTask: function() {
                   var addTaskInput = document.getElementById('addTaskInput');
                   hTask.addTask(addTaskInput.value);

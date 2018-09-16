@@ -151,7 +151,9 @@ ul > li{
 .removeTaskButtons {
     width: 40%;
     height: 50px;
-    margin: 0px;
     position: relative;
+    margin: 0;
     margin-left: 25%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
