@@ -1,5 +1,5 @@
 var hTask = {
-      tasks: [   ],
+      tasks: [ ],
       addTask: function(taskText) {
          this.tasks.push({
             taskText: taskText,

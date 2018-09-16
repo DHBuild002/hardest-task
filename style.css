@@ -132,9 +132,10 @@ input:focus {
 }
 ul {
     list-style: none;
+    margin: 0;
+    margin-right: 0;
     text-align: center;
-    margin-left: 50px;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 55px;
     border-radius: 8px;
     border: none;
