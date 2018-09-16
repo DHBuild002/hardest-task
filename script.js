@@ -12,6 +12,9 @@ var hTask = {
       removeTask: function(position) {
          this.tasks.splice(position, 1);
       },
+      beforeToggle: function(){
+        document.querySelector('ul').style.display = 'none';
+      },
       toggleCompleted: function(position) {
          var task = this.tasks[position];
          task.completed = !task.completed;

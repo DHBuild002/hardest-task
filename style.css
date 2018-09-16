@@ -132,18 +132,16 @@ input:focus {
 }
 ul {
     list-style: none;
-    margin-left: 0;
+    text-align: center;
+    margin-left: 50px;
     font-size: 26px;
     line-height: 55px;
     border-radius: 8px;
     border: none;
     box-shadow: 0px 0px 2px #e5e5e5;
-    width: 70%;
+    width: 50%;
     height: auto;
     background: transparent;
-}
-ul:before{
-  display: none;
 }
 .removeTaskButtons {
     width: 40%;
