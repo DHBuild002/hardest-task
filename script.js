@@ -41,7 +41,9 @@ var hTask = {
 };         
 
 var handlers = {
-  
+                hideTasks: function(){
+                  var dip
+                },
                addTask: function() {
                   var addTaskInput = document.getElementById('addTaskInput');
                   hTask.addTask(addTaskInput.value);

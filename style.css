@@ -73,7 +73,7 @@ input[type="number"]{
   text-align: left;
 }
 input[type="number"]:focus{
-  border: 1px solid rgb(255, 139, 109);
+border: 1px solid lightgrey;
   background: #f6f6f6;
 }
 .toggle-section > button {
@@ -93,7 +93,7 @@ input {
 }
 input:focus {
     font-size: 15px;
-    border: 1px solid rgb(255, 139, 109);
+    border: 1px solid lightgrey;
     box-shadow: none;
     outline: 0;
     margin-top: 0;
@@ -103,7 +103,7 @@ input:focus {
 }
 .remove {
 	background-color: red;
-	border: none;
+	border: 1px solid lightgrey;
 }
 .remove:hover {
     color: rgb(255, 255, 255);
@@ -112,7 +112,7 @@ input:focus {
 .toggle-section .toggleTask {
     background: transparent;
     color: #E64E4E;
-    border: 1px solid #E64E4E;
+    border: 1px solid lightgrey;
     margin-bottom: 5px;
 }
 .toggle-section .toggleTask:hover {
@@ -134,6 +134,7 @@ ul {
     list-style: none;
     margin: 0;
     margin-right: 0;
+    margin-left: 25%;
     text-align: center;
     font-size: 22px;
     line-height: 55px;
@@ -143,6 +144,9 @@ ul {
     width: 50%;
     height: auto;
     background: transparent;
+}
+ul > li{
+  border: none;
 }
 .removeTaskButtons {
     width: 40%;
