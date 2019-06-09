@@ -1,154 +1,202 @@
-body {
-	  font-family: "Roboto", sans-serif;
-    margin: 0; 
+body
+{
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
 }
 /* Responsive - Breakpoints */
-@media only screen and (min-width: 1200px) {
-  div > input {
-    width: 58%;
-    margin-bottom: 0;
-  }
+@media only screen and (min-width: 1200px)
+{
+    div > input
+    {
+        width: 58%;
+        margin-bottom: 0;
+    }
 }
-@media only screen and (max-width: 1200px) {
-  div > input {
-    width: 58%;
-    margin-bottom: 0;
-  }
+@media only screen and (max-width: 1200px)
+{
+    div > input
+    {
+        width: 58%;
+        margin-bottom: 0;
+    }
 }
-@media only screen and (max-width: 600px) {
-  div > input[type="number"] {
-    width: 50%;
-  }
+@media only screen and (max-width: 600px)
+{
+    div > input[type='number']
+    {
+        width: 50%;
+    }
 }
 /* Font Styling */
-h2 {
-    color: rgb(255, 255, 255);
-    text-align: center;
+h2
+{
     font-weight: 300;
-    letter-spacing: 4px;
-    background: #e64e4e;
-    padding: 8%;
+
     margin: 0;
     margin-bottom: 1em;
+    padding: 8%;
+
+    text-align: center;
+    letter-spacing: 4px;
+
+    color: rgb(255, 255, 255);
+    background: #e64e4e;
 }
 /* Divs */
-#app-container div {
+#app-container div
+{
     margin: 1% 10%;
 }
-#app-container div:nth-of-type(input){
-    cursor: pointer;  
+#app-container div:nth-of-type(input)
+{
+    cursor: pointer;
 }
-div:nth-child(1){
-    margin-bottom: 0px;
+div:nth-child(1)
+{
+    margin-bottom: 0;
 }
-div:nth-child(1) > button {
+div:nth-child(1) > button
+{
     width: 40%;
 }
 
 /* Buttons and Inputs */
-button {
-    color: rgb(255, 255, 255);
-    background: #E64E4E;
-    border-radius: 5px;
-    border-style: none;
-    margin-left: 5px;
-    cursor: pointer;
-    height: 74.5px;
-    width: 24.5%;
+button
+{
     font-size: 15px;
-    text-transform: uppercase;
+
+    width: 24.5%;
+    height: 74.5px;
+    margin-left: 5px;
+
+    cursor: pointer;
     letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: rgb(255, 255, 255);
+    border-style: none;
+    border-radius: 5px;
+    background: #e64e4e;
 }
-button:hover {
+button:hover
+{
     color: rgb(255, 255, 255);
     background: #f95050;
 }
-input[type="number"]{
+input[type='number']
+{
     width: 15%;
+
     text-align: left;
 }
-input[type="number"]:focus{
+input[type='number']:focus
+{
     border: 1px solid lightgrey;
     background: #f6f6f6;
 }
-.toggle-section > button {
+.toggle-section > button
+{
     width: 40%;
 }
-input {
+input
+{
     height: 75px;
-    padding: 0;
-    border-radius: 8px;
-    border-style: none;
-    border: 1px solid lightgrey;
-    margin-top: 0px;
+    margin-top: 0;
+    margin-right: 0;
     margin-bottom: 8px;
-    margin-right: 0px;
+    padding: 0;
+
     cursor: pointer;
     text-indent: 15px;
-}
-input:focus {
-    font-size: 15px;
+
     border: 1px solid lightgrey;
-    box-shadow: none;
-    outline: 0;
-    margin-top: 0;
+    border-style: none;
+    border-radius: 8px;
 }
-#editTaskButton {
+/*input:focus
+{
+    font-size: 15px;
+
+    margin-top: 0;
+
+    border: 2px solid lightgrey;
+    outline: 0;
+    box-shadow: none;
+}*/
+#editTaskButton
+{
     margin-bottom: 5px;
 }
-.remove {
-	  background-color: red;
-	  border: 1px solid lightgrey;
+.remove
+{
+    border: 1px solid lightgrey;
+    background-color: red;
 }
-.remove:hover {
+.remove:hover
+{
     color: rgb(255, 255, 255);
     background-color: rgb(239, 65, 20);
 }
-.toggle-section .toggleTask {
-    background: transparent;
-    color: #E64E4E;
-    border: 1px solid lightgrey;
+.toggle-section .toggleTask
+{
     margin-bottom: 5px;
+
+    color: #e64e4e;
+    border: 1px solid lightgrey;
+    background: transparent;
 }
-.toggle-section .toggleTask:hover {
-	  background: rgb(233, 233, 233);
+.toggle-section .toggleTask:hover
+{
+    background: rgb(233, 233, 233);
 }
 
-.last-row {
-	  width: 40%;
+.last-row
+{
+    width: 40%;
 }
-.last-row > button:hover {
+.last-row > button:hover
+{
     background: rgb(51, 106, 200);
 }
 
-.last-row > button {
-    background: rgb(48, 69, 157);
+.last-row > button
+{
     color: white;
+    background: rgb(48, 69, 157);
 }
-ul {
-    list-style: none;
+ul
+{
+    font-size: 22px;
+    line-height: 55px;
+
+    width: 50%;
+    height: auto;
     margin: 0;
     margin-right: 0;
     margin-left: 25%;
+
+    list-style: none;
+
     text-align: center;
-    font-size: 22px;
-    line-height: 55px;
+
+    border: none;
     border-radius: 8px;
-    border: none;
-    box-shadow: 0px 0px 2px #e5e5e5;
-    width: 50%;
-    height: auto;
     background: transparent;
+    box-shadow: 0 0 2px #e5e5e5;
 }
-ul > li{
+ul > li
+{
     border: none;
 }
-.removeTaskButtons {
+.removeTaskButtons
+{
+    position: relative;
+
     width: 40%;
     height: 50px;
-    position: relative;
     margin: 0;
-    margin-left: 25%;
-    margin-bottom: 1%;
     margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 25%;
 }
