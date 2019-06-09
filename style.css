@@ -11,6 +11,7 @@ body
     {
         width: 58%;
         margin-bottom: 0;
+				border: 1px solid #e0e0e0;
     }
 }
 @media only screen and (max-width: 1200px)
@@ -19,6 +20,7 @@ body
     {
         width: 58%;
         margin-bottom: 0;
+				border: 1px solid #e0e0e0;
     }
 }
 @media only screen and (max-width: 600px)
@@ -27,6 +29,10 @@ body
     {
         width: 50%;
     }
+		div > input
+		{
+			border: 1px solid #e0e0e0;
+		}
 }
 /* Font Styling */
 h2
@@ -114,16 +120,16 @@ input
     border-style: none;
     border-radius: 8px;
 }
-/*input:focus
+input:focus
 {
     font-size: 15px;
 
     margin-top: 0;
 
-    border: 2px solid lightgrey;
+    border: 1px solid red;
     outline: 0;
     box-shadow: none;
-}*/
+}
 #editTaskButton
 {
     margin-bottom: 5px;
