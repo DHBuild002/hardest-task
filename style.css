@@ -1,16 +1,18 @@
+*{
+  margin: 0;
+}
 body
 {
     font-family: 'Roboto', sans-serif;
-
-    margin: 0;
 }
+
 /* Responsive - Breakpoints */
 @media only screen and (min-width: 1200px)
 {
     div > input
     {
         width: 58%;
-        margin-bottom: 0;
+
 				border: 1px solid #e0e0e0;
     }
 }
@@ -19,8 +21,8 @@ body
     div > input
     {
         width: 58%;
-        margin-bottom: 0;
-				border: 1px solid #e0e0e0;
+
+				border: solid #e0e0e0;
     }
 }
 @media only screen and (max-width: 600px)
@@ -31,7 +33,7 @@ body
     }
 		div > input
 		{
-			border: 1px solid #e0e0e0;
+			border: solid #e0e0e0;
 		}
 }
 /* Font Styling */
@@ -39,7 +41,6 @@ h2
 {
     font-weight: 300;
 
-    margin: 0;
     margin-bottom: 1em;
     padding: 8%;
 
@@ -60,7 +61,6 @@ div:nth-of-type(input)
 }
 div:nth-child(1)
 {
-    margin-bottom: 0;
 }
 div:nth-child(1) > button
 {
@@ -98,25 +98,23 @@ input[type='number']
 }
 input[type='number']:focus
 {
-    border: 1px solid lightgrey;
+    border: solid lightgrey;
     background: #f6f6f6;
 }
-.toggle-section > button
+.ht-toggle-section > button
 {
     width: 40%;
 }
 input
 {
     height: 75px;
-    margin-top: 0;
-    margin-right: 0;
+
     margin-bottom: 8px;
-    padding: 0;
 
     cursor: pointer;
     text-indent: 15px;
 
-    border: 1px solid lightgrey;
+    border: solid lightgrey;
     border-style: none;
     border-radius: 8px;
 }
@@ -124,49 +122,43 @@ input:focus
 {
     font-size: 15px;
 
-    margin-top: 0;
+    border: solid red;
 
-    border: 1px solid red;
-    outline: 0;
     box-shadow: none;
 }
-#editTaskButton
+.ht-remove
 {
-    margin-bottom: 5px;
-}
-.remove
-{
-    border: 1px solid lightgrey;
+    border: solid lightgrey;
     background-color: red;
 }
-.remove:hover
+.ht-remove:hover
 {
     color: rgb(255, 255, 255);
     background-color: rgb(239, 65, 20);
 }
-.toggle-section .toggleTask
+.ht-toggle-section .ht-toggleTask
 {
     margin-bottom: 5px;
 
     color: #e64e4e;
-    border: 1px solid lightgrey;
+    border: solid lightgrey;
     background: transparent;
 }
-.toggle-section .toggleTask:hover
+.ht-toggle-section .ht-toggleTask:hover
 {
     background: rgb(233, 233, 233);
 }
 
-.last-row
+.ht-last-row
 {
     width: 40%;
 }
-.last-row > button:hover
+.ht-last-row > button:hover
 {
     background: rgb(51, 106, 200);
 }
 
-.last-row > button
+.ht-last-row > button
 {
     color: white;
     background: rgb(48, 69, 157);
@@ -178,8 +170,6 @@ ul
 
     width: 50%;
     height: auto;
-    margin: 0;
-    margin-right: 0;
     margin-left: 25%;
 
     list-style: none;
@@ -195,13 +185,12 @@ ul > li
 {
     border: none;
 }
-.removeTaskButtons
+.ht-removeTaskButtons
 {
     position: relative;
 
     width: 40%;
     height: 50px;
-    margin: 0;
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 25%;
