@@ -50,11 +50,11 @@ h2
     background: #e64e4e;
 }
 /* Divs */
-#app-container div
+div
 {
     margin: 1% 10%;
 }
-#app-container div:nth-of-type(input)
+div:nth-of-type(input)
 {
     cursor: pointer;
 }
