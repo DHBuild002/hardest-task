@@ -87,8 +87,10 @@ var view = {
                      };
                    
                    taskLi.id = position;
+                   taskLi.innerHTML = document.createElement('p');
                    taskLi.textContent = taskIsCompleted;
                    taskLi.appendChild(this.addRemoveButton());
+                   tasksUl.appendChild(taskLi);
                    
                    // Below I added in a this statement to connect this methods output to the view method
                    // this will allow it to get the addRemoveButton();
