@@ -72,12 +72,11 @@ var handlers = {
 
 var view = {
                displayTasks: function() {
-                  var tasksUl = document.querySelector('ul');
+                  var tasksUl = document.querySelector('ht-tasks');
                   tasksUl.innerHTML = '';
                  // turning below into forEach
                  hTask.tasks.forEach(function(task, position){
                    var taskLi = document.createElement('li');
-                   var taskP = document.createElement('p');
                    var taskIsCompleted = '';
                                
                      if (task.completed === true) {
@@ -89,11 +88,15 @@ var view = {
                    taskLi.id = position;
                    taskLi.textContent = taskIsCompleted;
                    taskLi.appendChild(this.addRemoveButton());
+                   
                    var appendMultiple = function(parent, children){
-                     children.forEach(child){
-                       parent.appendChild(child)
-                     }
-                   }
+                     children.forEach(function (child){
+                       parent.appendChild(child);
+                     })
+                   };
+                                      
+                   appendMultiple(tasksUl, position)
+                   
                    // Below I added in a this statement to connect this methods output to the view method
                    // this will allow it to get addRemoveButton();
                  }, this);
