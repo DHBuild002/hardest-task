@@ -1,0 +1,15 @@
+{
+  "name": "hardest-task",
+  "version": "1.0.12",
+  "description": "A To Do App - Hardest Task First",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"server": "http-server -o ./"
+  },
+  "author": "Dan",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+ }
+}
