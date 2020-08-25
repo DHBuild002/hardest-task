@@ -5,11 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"server": "http-server -o ./"
+    "server": "live-server --open ."
   },
   "author": "Dan",
   "license": "ISC",
-  "devDependencies": {
-    "http-server": "^0.12.3"
- }
 }
