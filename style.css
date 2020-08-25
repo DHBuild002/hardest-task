@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+	background: rgb(240, 240, 240);
 }
 
 /* Responsive - Breakpoints */
@@ -12,6 +13,9 @@ body {
     width: 58%;
     border: 1px solid #e0e0e0;
   }
+	input[type='number']{
+		width: 73%;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -71,6 +75,9 @@ button {
   border-radius: 5px;
   background: #e64e4e;
 }
+.secondary {
+	background: rgb(184, 184, 184);
+}
 
 button:hover {
   color: rgb(255, 255, 255);
@@ -78,7 +85,6 @@ button:hover {
 }
 
 input[type='number'] {
-  width: 15%;
   text-align: left;
 }
 
@@ -87,8 +93,9 @@ input[type='number']:focus {
   background: #f6f6f6;
 }
 
-.ht-toggle-section>button {
-  width: 40%;
+.ht-toggle-section > button {
+	display: block;
+	
 }
 
 input {

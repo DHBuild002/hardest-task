@@ -22,14 +22,14 @@
 			<button onclick="handlers.addTask()"> Add </button>
 		</div>
 		<div>
-			<button class="editTaskButton" onclick="handlers.renameTask()"> Edit Task </button>
+			<button class="editTaskButton secondary" onclick="handlers.renameTask()"> Edit Task </button>
 			<input id="renameTaskPosition" type="number" placeholder="">
 			<input id="renameTaskText" type="text">
 		</div>
 		<div class="ht-toggle-section">
 			<input id="toggleCompletedPosition" type="number" placeholder="" />
-			<button class="toggleTask" onclick="handlers.toggleCompleted()"> Toggle Task Status </button>
-			<button onclick="handlers.toggleAll()"> Toggle All </button>
+			<button class="toggleTask secondary" onclick="handlers.toggleCompleted()"> Toggle Task Status </button>
+			<button class="secondary" onclick="handlers.toggleAll()"> Toggle All </button>
 		</div>
 	</div>
 	<div class="tasks-container">
