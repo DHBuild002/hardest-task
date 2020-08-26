@@ -17,13 +17,13 @@
 
 	<h2> Hardest Task - Priority Based Task Manager</h2>
 	<div class="container">
-		<div>
-			<input id="addTaskInput" type="text" />
+		<div class="ht-addTasks-section">
+			<input id="addTaskInput" type="text" placeholder="Enter a Task"/>
 			<button onclick="handlers.addTask()"> Add </button>
 		</div>
-		<div>
+		<div class="ht-editTasks-section">
 			<button class="editTaskButton secondary" onclick="handlers.renameTask()"> Edit Task </button>
-			<input id="renameTaskPosition" type="number" placeholder="">
+			<input id="renameTaskPosition" type="number" placeholder="0"><p>Task ID - Enter the number of your task, minus 1.
 			<input id="renameTaskText" type="text">
 		</div>
 		<div class="ht-toggle-section">

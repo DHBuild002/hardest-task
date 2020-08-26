@@ -5,16 +5,20 @@
 body {
   font-family: 'Roboto', sans-serif;
 	background: rgb(240, 240, 240);
+	width: 100%;
 }
 
 /* Responsive - Breakpoints */
+
+/*
 @media only screen and (max-width: 750px) {
   div>input {
     width: 58%;
     border: 1px solid #e0e0e0;
   }
-	input[type='number']{
-		width: 100%
+	input[type='number'], {
+		/*
+		width: 20%
 	}
 
 	.ht-toggle-section > button {
@@ -22,26 +26,28 @@ body {
 		margin: 5px;
 	}
 }
+*/
 
-@media only screen and (max-width: 1200px) {
-  div>input {
-    width: 58%;
+@media only screen and (min-width: 1000px) {
+  div>input[type="number"] {
     border: solid #e0e0e0;
+		width: 10%;
   }
+	div > button {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 540px) {
-  div>input[type='number'] {
-    width: 50%;
-  }
 .ht-toggle-section > button{
 	width: 100%;
 	margin: 5px;
+	}
 }
-  div>input {
-    border: solid #e0e0e0;
-  }
-}
+
+
+
+
 
 /* Font Styling */
 h2 {
@@ -58,15 +64,23 @@ h2 {
 .container {
   margin: 1% 10%;
 }
+.ht-addTasks-section {
+	margin-bottom: 5px;
+}
+.ht-addTasks-section > * {
+	margin: 2px;
+	width: 75%;
+}
+.ht-editTasks-section {
+	margin-bottom: 10px;
+}
+.ht-editTasks-section > * {
+	margin: 2px;
+	width: 75%;
+}
 
 div:nth-of-type(input) {
   cursor: pointer;
-}
-
-div:nth-child(1) {}
-
-div:nth-child(1)>button {
-  width: 40%;
 }
 
 /* Buttons and Inputs */
@@ -112,6 +126,7 @@ input {
   border: solid lightgrey;
   border-style: none;
   border-radius: 8px;
+	width: 100%;
 }
 
 input:focus {
