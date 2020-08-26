@@ -10,24 +10,6 @@ body {
 
 /* Responsive - Breakpoints */
 
-/*
-@media only screen and (max-width: 750px) {
-  div>input {
-    width: 58%;
-    border: 1px solid #e0e0e0;
-  }
-	input[type='number'], {
-		/*
-		width: 20%
-	}
-
-	.ht-toggle-section > button {
-		width: 50%;
-		margin: 5px;
-	}
-}
-*/
-
 @media only screen and (min-width: 1000px) {
   div>input[type="number"] {
     border: solid #e0e0e0;
