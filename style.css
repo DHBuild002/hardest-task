@@ -8,13 +8,18 @@ body {
 }
 
 /* Responsive - Breakpoints */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 750px) {
   div>input {
     width: 58%;
     border: 1px solid #e0e0e0;
   }
 	input[type='number']{
-		width: 73%;
+		width: 100%
+	}
+
+	.ht-toggle-section > button {
+		width: 50%;
+		margin: 5px;
 	}
 }
 
@@ -25,11 +30,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 540px) {
   div>input[type='number'] {
     width: 50%;
   }
-
+.ht-toggle-section > button{
+	width: 100%;
+	margin: 5px;
+}
   div>input {
     border: solid #e0e0e0;
   }
@@ -47,7 +55,7 @@ h2 {
 }
 
 /* Divs */
-div {
+.container {
   margin: 1% 10%;
 }
 
@@ -92,10 +100,8 @@ input[type='number']:focus {
   border: solid lightgrey;
   background: #f6f6f6;
 }
-
-.ht-toggle-section > button {
-	display: block;
-	
+.ht-toggle-section {
+	width: 100%;
 }
 
 input {
