@@ -13,11 +13,7 @@ body {
 @media only screen and (min-width: 1000px) {
   div>input[type="number"] {
     border: solid #e0e0e0;
-		width: 10%;
   }
-	div > button {
-		width: 100%;
-	}
 }
 
 @media only screen and (min-width: 540px) {
@@ -26,11 +22,6 @@ body {
 	margin: 5px;
 	}
 }
-
-
-
-
-
 /* Font Styling */
 h2 {
   font-weight: 300;
@@ -44,21 +35,29 @@ h2 {
 
 /* Divs */
 .container {
-  margin: 1% 10%;
+    margin: auto;
+    width: 45%;
+    text-align: center;
 }
 .ht-addTasks-section {
 	margin-bottom: 5px;
 }
 .ht-addTasks-section > * {
 	margin: 2px;
-	width: 75%;
 }
 .ht-editTasks-section {
 	margin-bottom: 10px;
+	width: 100%;
 }
 .ht-editTasks-section > * {
 	margin: 2px;
-	width: 75%;
+}
+div>input[type="number"]{
+	width: 10%;
+	border: .5px solid rgb(214, 214, 214);
+}
+div>input{
+	border: .5px solid rgb(214, 214, 214);
 }
 
 div:nth-of-type(input) {
@@ -68,7 +67,7 @@ div:nth-of-type(input) {
 /* Buttons and Inputs */
 button {
   font-size: 15px;
-  width: 24.5%;
+  width: 30%;
   height: 74.5px;
   margin-left: 5px;
   cursor: pointer;

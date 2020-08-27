@@ -22,17 +22,19 @@
 			<button onclick="handlers.addTask()"> Add </button>
 		</div>
 		<div class="ht-editTasks-section">
-			<button class="editTaskButton secondary" onclick="handlers.renameTask()"> Edit Task </button>
-			<input id="renameTaskPosition" type="number" placeholder="0"><p>Task ID - Enter the number of your task, minus 1.
+			<input id="renameTaskPosition" type="number" placeholder="0">
 			<input id="renameTaskText" type="text">
+			<p>Task ID - Enter the number of your task, minus 1.</p>
+			<button class="editTaskButton secondary" onclick="handlers.renameTask()"> Edit Task </button>
 		</div>
 		<div class="ht-toggle-section">
-			<input id="toggleCompletedPosition" type="number" placeholder="" />
+			<input id="toggleCompletedPosition" type="number" placeholder="0" />
 			<button class="toggleTask secondary toggle-left" onclick="handlers.toggleCompleted()"> Toggle Task Status </button>
 			<button class="secondary toggle-right" onclick="handlers.toggleAll()"> Toggle All </button>
 		</div>
 	</div>
 	<div class="tasks-container">
+		
 		<ul id="ht-tasks">
 
 		</ul>
