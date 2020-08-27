@@ -1,11 +1,8 @@
-* {
-  margin: 0;
-}
-
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
 	background: rgb(240, 240, 240);
 	width: 100%;
+	margin: 0;
 }
 
 /* Responsive - Breakpoints */
@@ -25,6 +22,7 @@ body {
 /* Font Styling */
 h2 {
   font-weight: 300;
+	margin: 0;
   margin-bottom: 1em;
   padding: 8%;
   text-align: center;
@@ -42,22 +40,12 @@ h2 {
 .ht-addTasks-section {
 	margin-bottom: 5px;
 }
-.ht-addTasks-section > * {
-	margin: 2px;
-}
 .ht-editTasks-section {
 	margin-bottom: 10px;
 	width: 100%;
 }
-.ht-editTasks-section > * {
-	margin: 2px;
-}
 div>input[type="number"]{
-	width: 10%;
-	border: .5px solid rgb(214, 214, 214);
-}
-div>input{
-	border: .5px solid rgb(214, 214, 214);
+	width: 16%;
 }
 
 div:nth-of-type(input) {
@@ -95,16 +83,18 @@ input[type='number']:focus {
   border: solid lightgrey;
   background: #f6f6f6;
 }
+
 .ht-toggle-section {
 	width: 100%;
 }
 
 input {
-  height: 75px;
   margin-bottom: 8px;
   cursor: pointer;
   text-indent: 15px;
-  border: solid lightgrey;
+	padding: 10px;
+	line-height: 16px;
+	box-shadow: 1px 1px 1px rgb(205, 205, 205);
   border-style: none;
   border-radius: 8px;
 	width: 100%;
@@ -114,6 +104,7 @@ input:focus {
   font-size: 15px;
   border: solid red;
   box-shadow: none;
+	outline: none;
 }
 
 .ht-remove {
