@@ -109,6 +109,22 @@ var view = {
                      } else {
                         taskIsCompleted = '( ) ' + task.taskText;
                      }
+
+                   taskLi.id = position;
+                   taskLi.textContent = taskIsCompleted;
+                   taskLi.appendChild(this.addRemoveButton());
+                   tasksUl.appendChild(taskLi);
+                   // Below I added in a this statement to connect this methods output to the view method
+                   // this will allow it to get addRemoveButton();
+                 }, this);
+               },
+
+                 /*
+                    if (task.completed === true) {
+                        taskIsCompleted = '(x) ' + task.taskText;
+                     } else {
+                        taskIsCompleted = '( ) ' + task.taskText;
+                     }
                      taskLi.id = i;
 
                      taskLi.textContent = taskIsCompleted;
