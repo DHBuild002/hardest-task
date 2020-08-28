@@ -44,6 +44,9 @@ h2 {
 	margin-bottom: 10px;
 	width: 100%;
 }
+.ht-editTasks-section, .ht-toggle-section{
+	display: none;
+}
 div>input[type="number"]{
 	width: 16%;
 }
@@ -55,7 +58,7 @@ div:nth-of-type(input) {
 /* Buttons and Inputs */
 button {
   font-size: 15px;
-  width: 30%;
+  width: 50%;
   height: 74.5px;
   margin-left: 5px;
   cursor: pointer;
@@ -150,13 +153,22 @@ ul {
   list-style: none;
   text-align: center;
   border: none;
-  border-radius: 8px;
   background: transparent;
-  box-shadow: 0 0 2px #e5e5e5;
 }
 
 ul>li {
   border: none;
+	background: rgb(242, 242, 242);
+	border-radius: 7px;
+	box-shadow: 1px .5px .5px rgb(159, 159, 159);
+	margin-top: 5px;
+}
+li > button {
+	margin-left: 2em;
+}
+.tasks-container {
+	padding: 5em;
+	background: rgb(255, 173, 173)
 }
 
 .ht-removeTaskButtons {
@@ -167,4 +179,3 @@ ul>li {
   margin-bottom: 1%;
   margin-left: 25%;
 }
-
